@@ -2,19 +2,16 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  // data member
-  let title = "Event Demo";
+  let list = ["Hello", "Hello"];
 
-  // member functison
-  let myfun = () => {
-    alert("I am click handler");
-  };
-
-  // binding the memebrs inside the JSX. {}
   return (
     <div>
-      <h1>{title}</h1>
-      <input type="button" value="Click Me" onClick={myfun} />
+      <h1>Working with Events and List</h1>
+      <input type="button" value="Say Hello" />
+
+      {list.map((item) => {
+        return <h3>{item}</h3>;
+      })}
     </div>
   );
 }
