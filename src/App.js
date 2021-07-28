@@ -10,7 +10,7 @@ export default function App() {
   // Arrow Function
   const addNewHello = () => {
     // Array Cloin
-    const newList = [...list, "Hello"];
+    const newList = [...list, "Hello World"];
     setList(newList);
 
     console.log(list);
@@ -26,10 +26,10 @@ export default function App() {
       {list.map((item) => {
         return (
           <h3>
-            {item} Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Minus inventore aut debitis officiis magnam expedita ea sequi iste
-            ut autem eum mollitia nam libero provident dolore at, obcaecati
-            veritatis delectus?
+            {item} Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Possimus ducimus id voluptatibus, iusto, nisi modi alias numquam
+            doloremque atque provident consequuntur consectetur autem, molestias
+            dicta. In voluptatibus possimus necessitatibus reprehenderit.
           </h3>
         );
       })}
