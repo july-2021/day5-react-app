@@ -3,12 +3,15 @@ import "./App.css";
 
 function App() {
   let title = "Hello React;";
-  let list = ["Delhi", "Calcutta", "Mumbai", "Chennai"];
+  let list = ["Delhi", "Calcutta", "Mumbai", "Chennai", "Pune", "Lonavala"];
 
   return (
     <div>
       <h1>{title}</h1>
-      <h1>{list}</h1>
+
+      {list.map((item) => {
+        return <h1>{item}</h1>;
+      })}
     </div>
   );
 }
