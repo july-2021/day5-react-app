@@ -2,11 +2,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
-function App() {
+export default function App() {
   // DECALRING THE VARIBALE USING REACTG :: HOOKS
+  // Array Destcutring :: React Hooks
   const [list, setList] = useState([]);
 
+  // Arrow Function
   const addNewHello = () => {
+    // Array Cloin
     const newList = [...list, "Hello"];
     setList(newList);
 
@@ -34,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
