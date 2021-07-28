@@ -3,7 +3,7 @@ import "./App.css";
 
 // JSX => JAVSCRIPT XML => JS + HTML
 // JSX must be wrapped within () if it is multiline
-
+// JSX can have only one PARENT tag.
 function App() {
   return (
     <div>
