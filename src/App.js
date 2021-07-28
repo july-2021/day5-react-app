@@ -10,7 +10,7 @@ export default function App() {
   // Arrow Function
   const addNewHello = () => {
     // Array Cloin
-    const newList = [...list, "Hello World"];
+    const newList = [...list, "Hello world"];
     setList(newList);
 
     console.log(list);
@@ -21,6 +21,7 @@ export default function App() {
   return (
     <div>
       <h1>Working with Events and List</h1>
+      <input type="text" placeholder="Post your thought here..." />
       <input type="button" value="Say Hello" onClick={addNewHello} />
 
       {list.map((item) => {
@@ -36,5 +37,3 @@ export default function App() {
     </div>
   );
 }
-
-// export default App;
