@@ -8,10 +8,11 @@ function App() {
   return (
     <div>
       <h1>{title}</h1>
-
-      {list.map((item) => {
-        return <h1>{item}</h1>;
-      })}
+      <ul>
+        {list.map((item) => {
+          return <li>{item}</li>;
+        })}
+      </ul>
     </div>
   );
 }
