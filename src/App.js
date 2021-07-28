@@ -1,12 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-  let list = ["Hello", "Hello"];
+  // DECALRING THE VARIBALE USING REACTG :: HOOKS
+  const [list, setList] = useState([]);
 
   const addNewHello = () => {
-    // alert("Add new Hello logic weill come here....");
-    list.push("Hello");
+    const newList = [...list, "Hello"];
+    setList(newList);
 
     console.log(list);
   };
@@ -19,7 +21,14 @@ function App() {
       <input type="button" value="Say Hello" onClick={addNewHello} />
 
       {list.map((item) => {
-        return <h3>{item}</h3>;
+        return (
+          <h3>
+            {item} Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Minus inventore aut debitis officiis magnam expedita ea sequi iste
+            ut autem eum mollitia nam libero provident dolore at, obcaecati
+            veritatis delectus?
+          </h3>
+        );
       })}
     </div>
   );
